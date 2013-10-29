@@ -16,7 +16,13 @@ describe('jenkins test project', function() {
 describe('jenkins test with supertest', function() {
     it('should locally get hello jenkins', function() {
         supertest(api).get('/').expect(200).end(function(e, r) {
-            res.body.should.be.equal('Hello Jenkins');
+            r.body.should.be.equal('Hello Jenkins');
+        })
+    })
+
+    it('should locally get welcome home', function() {
+        supertest(api).get('/home').expect(200).end(function(e, r) {
+            r.body.should.be.equal('Welcome Home');
         })
     })
 })
