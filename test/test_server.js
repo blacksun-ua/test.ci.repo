@@ -7,9 +7,9 @@ var api = require('../src/main').api();
 
 describe('jenkins test project', function() {
     it('should got hello jenkins', function() {
-//        request.get('http://localhost:8090', function(e, r, body) {
-//            body.should.be.equal('Hello Jenkins')
-//        })
+        request.get('http://localhost:8090', function(e, r, body) {
+            body.should.not.be.equal('Hello Jenkins')
+        })
     })
 })
 
