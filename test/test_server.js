@@ -22,7 +22,7 @@ describe('jenkins check true', function() {
 
 describe('jenkins check true 2', function() {
     it('should be true also', function() {
-        (1).should.be.false;
+        (1).should.be.ok;
     })
 })
 
