@@ -8,8 +8,20 @@ var api = require('../src/main').api();
 describe('jenkins test project', function() {
     it('should got hello jenkins', function() {
         request.get('http://localhost:8090', function(e, r, body) {
-            body.should.not.be.equal('Hello Jenkins')
+            should(body).not.be.equal('Hello Jenkins')
         })
+    })
+})
+
+describe('jenkins check true', function() {
+    it('should be true', function() {
+        (1).should.be.true;
+    })
+})
+
+describe('jenkins check true 2', function() {
+    it('should be true also', function() {
+        (1).should.be.true;
     })
 })
 
