@@ -16,13 +16,13 @@ describe('jenkins test project', function() {
 
 describe('jenkins check true', function() {
     it('should be true', function() {
-        (1).should.be.true;
+        (1).should.be.ok;
     })
 })
 
 describe('jenkins check true 2', function() {
     it('should be true also', function() {
-        (1).should.be.true;
+        (1).should.be.ok;
     })
 })
 
